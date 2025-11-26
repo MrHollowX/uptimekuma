@@ -1,62 +1,60 @@
-# 🚀 Uptime Kuma Modern Dark Theme
+# 🎨 Uptime Kuma Modern Themes
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg) ![CSS](https://img.shields.io/badge/style-CSS3-orange)
+![License](https://img.shields.io/badge/license-GPL--3.0-blue.svg) ![CSS](https://img.shields.io/badge/style-CSS3-orange)
 
-A sleek, modern, "Glassmorphism" inspired CSS theme for [Uptime Kuma](https://github.com/louislam/uptime-kuma) status pages. This theme transforms the default utilitarian look into a premium, card-based dashboard with a deep slate color palette.
+A collection of premium, modern CSS themes for [Uptime Kuma](https://github.com/louislam/uptime-kuma) status pages. These themes transform the utilitarian default look into a polished, responsive dashboard.
 
-![Screenshot](screenshot.png)
+## 🍏 Option 1: Liquid Glass (Apple Style)
+Inspired by **macOS Big Sur** and **VisionOS**. Features a rich "Aurora" liquid background, heavy frosted glass effects, pill-shaped badges, and native system typography.
 
-## ✨ Features
+![Liquid Glass Preview](screenshot_apple.png)
 
-* **🌑 Deep Slate Palette:** Replaces the standard black/white with a rich `slate-900` background (inspired by Tailwind CSS).
-* **🃏 Floating Cards:** Detaches monitors from their group containers, giving every service its own independent, floating card.
-* **🧊 Glassmorphism:** Adds a translucent, blurred glass effect to the "System Status" banner.
-* **🅰️ Modern Typography:** Imports and applies the **Inter** font family for clean, legible text.
-* **🟢 Glowing Accents:** Replaces standard greens with a vibrant Emerald accent color.
-* **📱 Responsive Design:** Custom adjustments for mobile to ensure uptime bars and labels stack correctly.
-* **🖱️ Interactive UI:** subtle hover animations and lift effects on status cards.
+### Features
+* **💧 Liquid Background:** Deep flowing mesh gradient (Purple/Blue/Magenta).
+* **🧊 Glassmorphism:** `backdrop-filter: blur(25px)` for realistic frosted glass.
+* **🔤 Native Fonts:** Uses San Francisco (Apple) or Segoe UI (Windows).
+* **💊 Pill Badges:** Rounded status indicators.
+
+👉 **[Get the CSS here](./apple-theme.css)**
+
+---
+
+## 🌑 Option 2: Modern Dark (Original)
+A clean, professional "Slate" theme inspired by **Tailwind CSS**. Features a deep blue-grey palette, the **Inter** font family, and distinct floating cards.
+
+![Modern Dark Preview](screenshot_darkblue.png)
+
+### Features
+* **🌚 Deep Slate Palette:** Replaces true black with rich `slate-900` tones.
+* **🃏 Floating Cards:** Detaches monitors from groups for a clean layout.
+* **✨ Inter Font:** Professional, highly readable typography.
+* **🟢 Emerald Accents:** Vibrant green status indicators.
+
+👉 **[Get the CSS here](./darkblue-theme.css)**
+
+---
 
 ## 🛠️ Installation
 
-Applying this theme is very simple and requires **no server restarts**.
+Applying a theme is simple and requires **no server restarts**.
 
 1.  Log in to your **Uptime Kuma** dashboard.
 2.  Navigate to **Settings** > **Appearance**.
 3.  Scroll down to the **Custom CSS** box.
-4.  Copy the contents of [`theme.css`](./theme.css) from this repository.
+4.  Copy the CSS code from the file you want (e.g., `apple-theme.css` or `theme.css`).
 5.  Paste the code into the box.
 6.  Click **Save**.
 
-## 🎨 Customization
-
-The theme uses CSS variables (`:root`) at the top of the file, making it easy to change colors to match your own branding.
-
-```css
-:root {
-    --bg-color: #0f172a;     /* Background */
-    --card-bg: #1e293b;      /* Card Background */
-    --text-primary: #f1f5f9; /* Main Text */
-    --accent-color: #10b981; /* Status Green/Glow */
-    /* ... */
-}
-```
-
 ## 🐛 Troubleshooting
 
-**"My groups still have a dark background box behind them."**
-This theme explicitly targets the .shadow-box class used by Uptime Kuma to make group containers transparent. If you see a dark box behind your groups, ensure you have copied the full CSS, specifically this section:
+**"My groups still have a dark box behind them."**
+These themes explicitly target the `.shadow-box` class used by Uptime Kuma to make group containers invisible so the cards can float freely. 
+
+If you see a dark/grey box behind your groups, ensure you have copied the full CSS, specifically this section which is present in all themes:
 
 ```css
-
 .shadow-box, .card {
     background-color: transparent !important;
     box-shadow: none !important;
     border: none !important;
 }
-```
-
-## 🤝 Contributing
-
-Feel free to open an issue or submit a pull request if you find any layout bugs or have suggestions for improvements!
-
-Note: This is a 3rd party CSS theme and is not officially affiliated with Uptime Kuma.
