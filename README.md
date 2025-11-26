@@ -42,7 +42,9 @@ The theme uses CSS variables (`:root`) at the top of the file, making it easy to
 ```
 
 ## 🐛 Troubleshooting
-"My groups still have a dark background box behind them." This theme explicitly targets the .shadow-box class used by Uptime Kuma to make group containers transparent. If you see a dark box behind your groups, ensure you have copied the full CSS, specifically this section:
+
+**"My groups still have a dark background box behind them."**
+This theme explicitly targets the .shadow-box class used by Uptime Kuma to make group containers transparent. If you see a dark box behind your groups, ensure you have copied the full CSS, specifically this section:
 
 ```css
 
@@ -54,6 +56,7 @@ The theme uses CSS variables (`:root`) at the top of the file, making it easy to
 ```
 
 ## 🤝 Contributing
+
 Feel free to open an issue or submit a pull request if you find any layout bugs or have suggestions for improvements!
 
 Note: This is a 3rd party CSS theme and is not officially affiliated with Uptime Kuma.
