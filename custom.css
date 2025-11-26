@@ -1,0 +1,152 @@
+/* Import Inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+    --bg-color: #0f172a;   /* Deep Slate */
+    --card-bg: #1e293b;    /* Lighter Slate */
+    --text-primary: #f1f5f9;
+    --text-secondary: #94a3b8;
+    --accent-color: #10b981; /* Emerald Green */
+    --danger-color: #ef4444;
+    --border-color: #334155;
+}
+
+/* --- Global Reset --- */
+body {
+    background-color: var(--bg-color) !important;
+    font-family: 'Inter', sans-serif !important;
+    color: var(--text-primary) !important;
+}
+
+.container {
+    max-width: 1000px !important;
+    padding-top: 40px;
+}
+
+/* --- THE FIX: Target the container wrapper specifically --- */
+.shadow-box, .card {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+/* Ensure the monitor list inside doesn't have padding messing up alignment */
+.monitor-list {
+    padding: 0 !important;
+    background: transparent !important;
+}
+
+/* --- Top Buttons --- */
+.btn {
+    background-color: var(--card-bg) !important;
+    color: var(--text-primary) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 8px !important;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    box-shadow: none !important;
+}
+
+.btn:hover {
+    border-color: var(--accent-color) !important;
+}
+
+/* --- "All Systems Operational" Banner --- */
+/* We use !important heavily here to override the .shadow-box removal above */
+.overall-status {
+    background: rgba(16, 185, 129, 0.1) !important;
+    color: var(--accent-color) !important;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(16, 185, 129, 0.2) !important;
+    border-radius: 12px !important;
+    padding: 20px !important;
+    margin-bottom: 40px !important;
+    box-shadow: 0 0 15px rgba(16, 185, 129, 0.1) !important;
+}
+
+/* --- Group Headers (ARR, Services) --- */
+.group-title {
+    color: var(--text-secondary) !important;
+    font-size: 0.8rem !important;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    margin-bottom: 15px !important;
+    margin-top: 30px !important;
+    padding-left: 5px;
+    border: none !important;
+}
+
+/* --- Service Items (The Cards) --- */
+.item {
+    background-color: var(--card-bg) !important;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    margin-bottom: 12px;
+    padding: 15px 20px !important;
+    transition: all 0.2s ease-in-out;
+}
+
+/* This ensures the inner row items don't have extra margins */
+.item-inner {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Hover effect */
+.item:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent-color);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+}
+
+/* Service Name */
+.item .info {
+    font-weight: 600;
+    font-size: 1.05rem;
+}
+
+/* 100% Badge */
+.badge {
+    border-radius: 6px !important;
+    padding: 5px 8px !important;
+}
+
+.badge-success {
+    background-color: rgba(16, 185, 129, 0.2) !important;
+    color: var(--accent-color) !important;
+}
+
+/* --- Uptime Bars --- */
+.uptime-bar {
+    height: 30px !important;
+}
+
+.uptime-bar rect[fill="#28a745"], .uptime-bar rect[fill="#5cd65c"] {
+    fill: var(--accent-color) !important;
+}
+
+/* --- Footer --- */
+footer {
+    margin-top: 50px !important;
+    opacity: 0.4;
+    text-transform: uppercase;
+    
+/* --- Custom Scrollbar for Dark Theme --- */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-color); 
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--border-color); 
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #475569; 
+}
