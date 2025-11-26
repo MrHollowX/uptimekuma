@@ -40,5 +40,3 @@ The theme uses CSS variables (`:root`) at the top of the file, making it easy to
     --accent-color: #10b981; /* Status Green/Glow */
     /* ... */
 }
-
-<img width="3840" height="1991" alt="image" src="https://github.com/user-attachments/assets/726f3e09-3d9c-4440-a8d9-888e40ec1dd4" />
