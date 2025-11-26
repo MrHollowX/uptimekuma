@@ -1,6 +1,6 @@
 # 🎨 Uptime Kuma Modern Themes
 
-![License](https://img.shields.io/badge/license-GPL--3.0-blue.svg) ![CSS](https://img.shields.io/badge/style-CSS3-orange)
+![License](https://img.shields.io/badge/license-MIT-blue.svg) ![CSS](https://img.shields.io/badge/style-CSS3-orange)
 
 A collection of premium, modern CSS themes for [Uptime Kuma](https://github.com/louislam/uptime-kuma) status pages. These themes transform the utilitarian default look into a polished, responsive dashboard.
 
