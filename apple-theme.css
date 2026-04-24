@@ -167,3 +167,36 @@ footer {
     border-radius: 10px; 
 }
 ::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.4); }
+
+/* --- Fix: Elevate Dropdowns & Sort Options --- */
+
+/* Force the container for the sort buttons to the front */
+.dropdown, .btn-group {
+    position: relative !important;
+    z-index: 9998 !important;
+}
+
+/* Elevate the actual dropdown menu and apply the glass effect */
+.dropdown-menu {
+    z-index: 9999 !important;
+    background: rgba(0, 0, 0, 0.4) !important; /* Semi-transparent black */
+    backdrop-filter: blur(25px) saturate(180%) !important;
+    -webkit-backdrop-filter: blur(25px) saturate(180%);
+    border: 1px solid var(--glass-border) !important;
+    border-radius: 14px !important;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5) !important;
+    padding: 8px !important;
+}
+
+/* Fix the text color inside the dropdown so it's readable */
+.dropdown-menu .dropdown-item {
+    color: var(--text-primary) !important;
+    border-radius: 8px !important;
+    transition: all 0.2s ease;
+}
+
+/* Add a nice hover effect to the dropdown items */
+.dropdown-menu .dropdown-item:hover {
+    background: rgba(255, 255, 255, 0.15) !important;
+    color: var(--apple-green) !important;
+}
